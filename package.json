@@ -31,5 +31,7 @@
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
-  }
+  },
+  
+  "homepage": "https://KarunyaReddyJ.github.io/ToDoAPPWITH_TS_REACT/"
 }
