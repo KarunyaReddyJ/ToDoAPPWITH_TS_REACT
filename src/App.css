@@ -1,0 +1,25 @@
+.custom-checkbox {
+    @apply relative inline-block w-5 h-5;
+  }
+  
+  .custom-checkbox input {
+    @apply absolute opacity-0 w-0 h-0;
+  }
+  
+  .checkmark {
+    @apply absolute top-0 left-0 w-5 h-5 bg-gray-200 border-2 border-gray-400 rounded;
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark {
+    @apply bg-blue-500 border-blue-500;
+  }
+  
+  .checkmark:after {
+    content: "";
+    @apply absolute hidden left-1 top-0.5 w-2 h-3 border-white border-2 border-r-0 border-t-0 transform rotate-45;
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark:after {
+    @apply block;
+  }
+  
